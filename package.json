@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "puppeteer": "^21.3.8"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js"
+  }
+}
+
