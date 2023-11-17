@@ -39,7 +39,7 @@ console.log = function (message) {
 	console.log('▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃');
 	await page.goto(link);
 	await delay(2000);
-	const check = await page.waitForSelector('#__next > main > div > div.css-iiltjv > div > div.css-1161qt5 > div > div > div > label:nth-child(2)')
+	const check = await page.waitForSelector('#__next > main > div > div.css-iiltjv > div > div.css-1161qt5 > div > div > div > div:nth-child(2) > span.chakra-checkbox__control.css-ildapo')
 	await check.click();
 	const elements = await page.$$('#jobList > a');
 	console.log(`Il y a ${elements.length} entreprises.\n`);
